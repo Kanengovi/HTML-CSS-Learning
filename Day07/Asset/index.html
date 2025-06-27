@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="container">
+        <div class="background">
+        <img src="Image.png" alt="">
+        </div>
+        <div class="form-creater">
+            <h1>Let's level up your brand, together</h1>
+            <p>You can reach us anytume via <span>hi@untitledui.com</span></p>
+            <form>
+                <label for="fname">Name</label><br>
+                <input type="text" name="fname" id="fname" placeholder="Your name" class="input"><br>
+                <label for="femail">Email</label><br>
+                <input type="email" name="femail" id="femail" placeholder="You@company.com" class="input"><br>
+                <label for="fphone">Phone number</label><br>
+                <input type="tel" name="fphone" id="fphone" class="input" placeholder="+1(555)000-0000" pattern="[0-9]{1}-[0-9]{3}-[0-9]{4}"><br>
+                <label for="ftext-area">How can we help?</label><br>
+                <textarea name="ftext-area" id="" class="text-area">Tell us a little about the project</textarea><br>
+                <label for="fsevices">Services</label>
+                <div class="services-container">
+                    <div class="services-left">
+                        <input type="checkbox" name="vehicle1" id="vehicle1" >
+                        <label for="web-design">Website design</label><br>
+                        <input type="checkbox" name="vehicle2" id="vehicle2">
+                        <label for="UX-design">UX design</label><br>
+                        <input type="checkbox" name="vehicle3" id="vehicle3">
+                        <label for="user-research">User research</label>
+                    </div>
+                    <div class="services-right">
+                        <input type="checkbox" name="vehicle4" id="vehicle4">
+                        <label for="web-design">Content creation</label><br>
+                        <input type="checkbox" name="vehicle5" id="vehicle5">
+                        <label for="UX-design">Strategy & consulting</label><br>
+                        <input type="checkbox" name="vehicle6" id="vehicle6">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <input type="submit" value="Get started" class="input button-submit">
+            </form>
+        </div>
+    </header>
+</body>
+</html>
