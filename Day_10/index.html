@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting App</title>
+</head>
+<body>
+    <h1 id="main-title">Welcome</h1>
+    <p class="description">description</p>
+    <input type="text" id="student-name" placeholder="Enter your name">
+    <button onclick="Greeting()">Greet</button>
+    <p id="greeting"></p>
+
+    <script>
+        document.getElementById('main-title').innerText = 'Chào mừng bạn đến với khóa học JavaScript!';
+        document.querySelector('.description').innerHTML = 'Bạn sẽ học về <strong>DOM, Events</strong>';
+        function Greeting() {
+            const studentName = document.getElementById('student-name').value;
+            if (studentName.trim()) {
+                document.getElementById('greeting').innerText = `Xin chào, ${studentName}!`;
+            }
+        }
+    </script>
+</body>
+</html>
