@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý Danh mục</title>
+</head>
+
+<body>
+  <h1>Quản lý Danh mục</h1>
+
+  <!-- Form thêm/sửa danh mục -->
+  <form>
+    <label for="cat-name">Tên danh mục:</label><br>
+    <input type="text" id="cat-name" name="cat-name" maxlength="255"><br>
+
+    <label for="quantity">Số lượng:</label><br>
+    <input type="number" id="quantity" name="quantity" min="0"><br>
+
+    <button type="submit">Lưu danh mục</button>
+  </form>
+
+  <!-- Danh sách danh mục -->
+  <h2>Danh sách danh mục</h2>
+  <table border="1">
+    <tr>
+      <th>Tên</th>
+      <th>Số lượng</th>
+      <th>Thao tác</th>
+    </tr>
+    <tr>
+      <td>Điện tử</td>
+      <td>45</td>
+      <td>
+        <button>Sửa</button>
+        <button>Xoá</button>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý Sản phẩm</title>
+</head>
+<body>
+  <h1>Quản lý Sản phẩm</h1>
+
+
+  <form>
+    <label for="name">Tên sản phẩm:</label><br>
+    <input type="text" id="name" name="name" maxlength="255"><br>
+
+    <label for="price">Giá:</label><br>
+    <input type="number" id="price" name="price"><br>
+
+    <label for="category">Danh mục:</label><br>
+    <select id="category" name="category">
+      <option value="my-pham">Mỹ phẩm</option>
+      <option value="dien-tu">Điện tử</option>
+      <option value="thoi-trang">Thời trang</option>
+      <option value="trang-suc">Trang sức</option>
+    </select><br>
+
+    <label for="description">Mô tả:</label><br>
+    <textarea id="description" name="description" maxlength="500"></textarea><br>
+
+    <button type="submit">Lưu sản phẩm</button>
+  </form>
+
+
+  <h2>Danh sách sản phẩm</h2>
+  <table border="1">
+    <tr>
+      <th>Tên</th>
+      <th>Giá</th>
+      <th>Danh mục</th>
+      <th>Mô tả</th>
+      <th>Thao tác</th>
+    </tr>
+
+ <tbody></tbody>
+  </table>
+<script src="main.js"></script>
+</body>
+</html>
