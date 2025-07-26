@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý Danh mục</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📁 Quản lý Danh mục</h1>
+
+  <form id="categoryForm">
+    <label>Tên danh mục:</label>
+    <input type="text" name="ten" maxlength="255" required>
+
+    <label>Số lượng:</label>
+    <input type="number" name="soluong" min="0" required>
+
+    <button type="submit">Thêm danh mục</button>
+  </form>
+
+  <h2>📋 Danh sách danh mục</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tên</th>
+        <th>Số lượng</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody id="categoryList">
+
+    </tbody>
+    <script src="category.js"></script>
+  </table>
+</body>
+</html>
