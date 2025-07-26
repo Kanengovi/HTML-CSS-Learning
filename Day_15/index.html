@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hệ thống Quản lý Nhân sự</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Quản lý Nhân sự</h1>
+
+  <form id="employeeForm">
+    <label>Họ tên:</label>
+    <input type="text" id="name" maxlength="255" required class="input">
+
+    <label>Tuổi:</label>
+    <input type="number" id="age" min="18" max="65" required class="input" >
+
+    <label>Giới tính:</label>
+    <div>
+      <label> Nam</label>
+      <input type="radio" name="gender" value="Nam" required >
+      <label> Nữ</label>
+      <input type="radio" name="gender" value="Nữ">
+    </div>
+
+    <label>Vị trí:</label>
+    <select id="position" required>
+      <option value="">--Chọn vị trí--</option>
+      <option value="Kế toán">Kế toán</option>
+      <option value="Lập trình viên">Lập trình viên</option>
+      <option value="Quản lý">Quản lý</option>
+    </select>
+
+    <label>Ghi chú:</label>
+    <textarea id="note" maxlength="300"></textarea>
+
+    <button type="submit">Thêm nhân viên</button>
+  </form>
+
+  <h2>📋 Danh sách nhân viên</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Mã NV</th>
+        <th>Họ tên</th>
+        <th>Tuổi</th>
+        <th>Giới tính</th>
+        <th>Vị trí</th>
+        <th>Ghi chú</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTable"></tbody>
+  </table>
+<script src="main.js"></script>
+</body>
+</html>
